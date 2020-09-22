@@ -1,0 +1,22 @@
+<HTML><HEAD><TITLE>Project1</TITLE></HEAD>
+<BODY BGCOLOR="#FFFFFF" Text="#000000" LINK="#0000FF" VLINK="#000099" ALINK="#00FF00">
+</FONT><B><FONT SIZE=5 COLOR="#008080">VBDoc.bas</B></FONT><FONT SIZE=2>
+<BR><BR><HR><BR>
+<br><FONT SIZE=3 COLOR="#008080">Public Sub ParseProjectFileVB(sfile As String)</B></FONT><br>
+open the file and parse the lines<br>
+<br><FONT SIZE=3 COLOR="#008080">Public Sub WriteVBHTMLFiles()</B></FONT><br>
+On Error Resume Next<br>
+write the startup file<br>
+<br><FONT SIZE=3 COLOR="#008080">Private Sub WriteTXTSCR(sfile As String, WrFile As String, I As Integer)</B></FONT><br>
+look for Attribute VB_Exposed = False<br>
+Write the source code in color html<br>
+<br><FONT SIZE=3 COLOR="#008080">Private Sub WriteFRMSCR(sfile As String, WrFile As String, I As Integer)</B></FONT><br>
+look for Attribute VB_Exposed = False<br>
+<br><FONT SIZE=3 COLOR="#008080">Private Function ISWRITABLE(sTMP As String) As Boolean</B></FONT><br>
+<br><FONT SIZE=3 COLOR="#008080">ipos = InStr(1, LCase(sTMP), "private sub", vbBinaryCompare)</B></FONT><br>
+<br><FONT SIZE=3 COLOR="#008080">ipos = InStr(1, LCase(sTMP), "public sub", vbBinaryCompare)</B></FONT><br>
+<br><FONT SIZE=3 COLOR="#008080">ipos = InStr(1, LCase(sTMP), "private function", vbBinaryCompare)</B></FONT><br>
+<br><FONT SIZE=3 COLOR="#008080">ipos = InStr(1, LCase(sTMP), "public function", vbBinaryCompare)</B></FONT><br>
+<br><FONT SIZE=3 COLOR="#008080">ipos = InStr(1, LCase(sTMP), "public property", vbBinaryCompare)</B></FONT><br>
+<br><FONT SIZE=3 COLOR="#008080">ipos = InStr(1, LCase(sTMP), "private property", vbBinaryCompare)</B></FONT><br>
+<BR></FONT></BODY></HTML>
